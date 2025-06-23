@@ -1,0 +1,3 @@
+// As of June 22, 2025: transfered app into tip_calculator directory so we can version control on git. We were able to fix directory issues with Content View and actual code. However, there is a directory conflict with .xcodeproj directory which is the backbone more internal code and formatting directory. Within xcode we are able to build and preview our project. However, when in xcode, there is an '!' on the left pannel file view. This essentially means if we pull code from another device or if we share the project with another person, there will be formatting errors and we wont be able to build. As of now, if we work on this locally we wont run into any issues, especially considering this is just to demo our first app using SwiftUI.
+
+
