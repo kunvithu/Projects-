@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		972911D62E08DD160012B198 /* First_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E732E2C5D9291006094D3 /* First_AppApp.swift */; };
-		976E73312C5D9291006094D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E73302C5D9291006094D3 /* ContentView.swift */; };
-		976E73332C5D9294006094D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976E73322C5D9294006094D3 /* Assets.xcassets */; };
-		976E73362C5D9294006094D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976E73352C5D9294006094D3 /* Preview Assets.xcassets */; };
+		97C7880E2E0A0BB000DA8894 /* First_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7880D2E0A0BB000DA8894 /* First_AppApp.swift */; };
+		97C788102E0A0BBA00DA8894 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7880F2E0A0BBA00DA8894 /* ContentView.swift */; };
+		97C788122E0A0BC500DA8894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C788112E0A0BC500DA8894 /* Assets.xcassets */; };
+		97C788152E0A0BCA00DA8894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C788132E0A0BCA00DA8894 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		976E732B2C5D9291006094D3 /* First App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		976E732E2C5D9291006094D3 /* First_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First_AppApp.swift; sourceTree = "<group>"; };
-		976E73302C5D9291006094D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		976E73322C5D9294006094D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		976E73352C5D9294006094D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97C7880D2E0A0BB000DA8894 /* First_AppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = First_AppApp.swift; path = FirstApp/First_AppApp.swift; sourceTree = "<group>"; };
+		97C7880F2E0A0BBA00DA8894 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = FirstApp/ContentView.swift; sourceTree = "<group>"; };
+		97C788112E0A0BC500DA8894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FirstApp/Assets.xcassets; sourceTree = "<group>"; };
+		97C788132E0A0BCA00DA8894 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,10 @@
 		976E73222C5D9291006094D3 = {
 			isa = PBXGroup;
 			children = (
-				976E732D2C5D9291006094D3 /* First App */,
+				97C788142E0A0BCA00DA8894 /* Preview Content */,
+				97C788112E0A0BC500DA8894 /* Assets.xcassets */,
+				97C7880F2E0A0BBA00DA8894 /* ContentView.swift */,
+				97C7880D2E0A0BB000DA8894 /* First_AppApp.swift */,
 				976E732C2C5D9291006094D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,23 +51,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		976E732D2C5D9291006094D3 /* First App */ = {
+		97C788142E0A0BCA00DA8894 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				976E732E2C5D9291006094D3 /* First_AppApp.swift */,
-				976E73302C5D9291006094D3 /* ContentView.swift */,
-				976E73322C5D9294006094D3 /* Assets.xcassets */,
-				976E73342C5D9294006094D3 /* Preview Content */,
+				97C788132E0A0BCA00DA8894 /* Preview Assets.xcassets */,
 			);
-			path = "First App";
-			sourceTree = "<group>";
-		};
-		976E73342C5D9294006094D3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				976E73352C5D9294006094D3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "FirstApp/Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,11 +87,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					976E732A2C5D9291006094D3 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -125,8 +122,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976E73362C5D9294006094D3 /* Preview Assets.xcassets in Resources */,
-				976E73332C5D9294006094D3 /* Assets.xcassets in Resources */,
+				97C788152E0A0BCA00DA8894 /* Preview Assets.xcassets in Resources */,
+				97C788122E0A0BC500DA8894 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				972911D62E08DD160012B198 /* First_AppApp.swift in Sources */,
-				976E73312C5D9291006094D3 /* ContentView.swift in Sources */,
+				97C7880E2E0A0BB000DA8894 /* First_AppApp.swift in Sources */,
+				97C788102E0A0BBA00DA8894 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +266,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"First App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -287,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adensvay.First-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"First App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
