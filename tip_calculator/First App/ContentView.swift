@@ -3,6 +3,8 @@
 //  First App
 //
 //  Created by Aden Kunvithu Svay on 8/2/24.
+
+// *** see README.md notes about '!' error
 //
 
 import SwiftUI
