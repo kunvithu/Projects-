@@ -1,23 +1,27 @@
 //
 //  ContentView.swift
 //  First App
-//
 //  Created by Aden Kunvithu Svay on 8/2/24.
 // *** see README.md notes about '!' error
 //
+
+
 
 import SwiftUI
 
 
 
-// notice how everything is under the struct. Struct has ContentView: View, which at a surface level is everything you can see
+// ContentView is a struct that conforms to the View protocol.
+// It acts as a blueprint for what is displayed on the screen.
+
 struct ContentView: View {
     
-    // @State initializes values, but updates values from the slider
+    // @State initializes values, and updates values upon any changes
     @State var total = ""
     @State var tipPercent = 15.0
     
-    // ??
+    // The body is the container and grouping for all the HStacks
+    // It defines the full layout
     var body: some View {
         // HStack is a horizontal container
         // This one is for the dollar sign icon in blue
@@ -44,7 +48,14 @@ struct ContentView: View {
             Text("%")
         }
         
-        // ??
+        // This is the core logic
+        // If the user input can be converted to a double...
+        // Then user input (totalNum) is multiplied by the number on slider (tipPercent)
+        // After proper formatting ("%0.2f")
+        // The Tip Amount is displayed
+    
+        // Is there a cleaner way to perform the arithmetic calculation instead of dividing by 100 ?? ** potential fix **
+        
         if let totalNum = Double(total) {
             Text("Tip Amount: $\(totalNum * tipPercent / 100, specifier: "%0.2f")")
         } else {
@@ -53,7 +64,7 @@ struct ContentView: View {
     }
 }
 
-// This function actually allows our code to be displayed live ->
+// This actually allows our code to be previewed live ->
 #Preview {
     ContentView()
 }
