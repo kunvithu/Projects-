@@ -56,6 +56,8 @@ struct ContentView: View {
     
         // Is there a cleaner way to perform the arithmetic calculation instead of dividing by 100 ?? ** potential fix **
         
+        // ** Also adding an extra white space character throws an error! **
+        
         if let totalNum = Double(total) {
             Text("Tip Amount: $\(totalNum * tipPercent / 100, specifier: "%0.2f")")
         } else {
