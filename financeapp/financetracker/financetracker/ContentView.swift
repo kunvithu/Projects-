@@ -4,6 +4,7 @@
 //
 //  Created by Aden Kunvithu Svay on 7/11/25.
 // Start of a new finance tracker app
+// Note to self, GUI takes a while to boot up and is flakey. I started a new program and did nothing to the program. Tried to run teh Content View, but nothing displayed until 5-10min later when I magically reappeared. haha
 
 import SwiftUI
 
